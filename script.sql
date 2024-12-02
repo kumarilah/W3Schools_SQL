@@ -1,14 +1,9 @@
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
-USE testdb;
-
+CREATE DATABASE testDB;
+USE testDB;
 CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL
+    PersonID int,
+    LastName varchar(225),
+    FirstName varchar(225),
+    place varchar(225),
+    city varchar(225),
 );
-
-INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
-INSERT INTO users (name, email) VALUES ('Bob', 'bob@example.com');
-
-SELECT * FROM users;
